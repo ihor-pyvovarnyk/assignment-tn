@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "assignment-tn"
+version = "0.1.0"
+description = ""
+authors = ["Ihor Pyvovarnyk"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+requests = "^2.31.0"
+openai = "^1.14.0"
+gitpython = "^3.1.42"
+scipy = "^1.12.0"
+pandas = "^2.2.1"
+flake8-pyproject = "^1.2.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+pytest = "^8.1.1"
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.12.0"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+
+[tool.flake8]
+max-line-length = 120
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

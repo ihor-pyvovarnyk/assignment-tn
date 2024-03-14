@@ -1,0 +1,4 @@
+embeddings/
+!embeddings/.gitkeep
+temp/
+!temp/.gitkeep
